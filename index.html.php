@@ -2,23 +2,28 @@
 <html>
 <head>
 	<link href="./bootstrap/css/bootstrap.css" rel="stylesheet"/>
+	<style>
+		.header {
+			text-align:center;
+			font-weight:bold;
+		}
+	</style>
 </head>
-<body><h1>It works!</h1>
-<p>This is the default web page for this server.</p>
-<p>The web server software is running but no content has been added, yet.</p>
-<h1>Joshua and Oliver Rocks</h1>
+<body>
+<div class="col-lg-4 col-lg-offset-4">
+	<h3 class="header">Login</h3>
+	<form role="form" action="php/login.php" method="post">
+		<div class="form-group">
+			<label for="email">Email address</label>
+  	  <input name="email" type="email" class="form-control" id="email" placeholder="Enter email">
+  	</div>
+  	<div class="form-group">
+  	  <label for="password">Password</label>
+  	  <input name="password" type="password" class="form-control" id="password" placeholder="Password">
+  	</div>
+		<input class="btn btn-default pull-right" type="submit" value="Login">
+	</form>
+</div>
 
-
-
-
-
-
-<?php
-
- echo "Hello world!";
-
- ?>
-
-
- </body>
+</body>
 </html>
