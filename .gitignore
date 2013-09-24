@@ -1,3 +1,6 @@
 # Ignore all temp files
 *.save
 *.*~
+
+# Ignore database config
+config/database.json
