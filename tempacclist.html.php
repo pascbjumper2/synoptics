@@ -13,8 +13,10 @@
     <!-- Bootstrap core CSS -->
     <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
+
     <!-- Custom styles for this template --><!-- Remember, we've got a limit of 30 CSS sheets =P -->
     <link href="css/theme.css" rel="stylesheet">
+
 
   </head>
 
@@ -66,7 +68,7 @@ echo $df;
 
 $per =  ($df / $ds) * 100;
 echo $per;
-
+$perrem = 100 - $per;
 ?>
 
 
@@ -78,11 +80,12 @@ echo $per;
 
       <div class="col-md-6 col-md-offset-3" style="">
         <div class="progress progress-striped">
-          <div class="progress-bar progress-bar-success tip"  data-toggle="tooltip" data-placement="bottom" title="Synoptics - 40%" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%">
-            <span class="sr-only">40% Complete (success)</span>
-          </div>
-          <div class="progress-bar progress-bar-warning tip"  data-toggle="tooltip" data-placement="bottom" title="Sequence - 20%" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 20%">
-            <span class="sr-only">20% Complete (warning)</span>
+          <div class="progress-bar progress-bar-success tip"
+        data-toggle="tooltip" data-placement="bottom" title="Synoptics
+        - <?php echo $perrem ?>" role="progressbar"
+        aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"
+        style="width: <?php echo $perrem ?>%">
+            <span class="sr-only"><?php echo $perrem ?> Complete (success)</span>
           </div>
         </div>
     </div>

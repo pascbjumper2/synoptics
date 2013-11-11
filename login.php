@@ -57,5 +57,22 @@ if ($_SERVER["REQUEST_METHOD"] == "POST")
 	</form>
 </div>
 
+
+
+<?php
+// $df contains the number of bytes available on "/"
+$df = disk_free_space("/");
+
+// On Windows:
+$df_c = disk_free_space("C:");
+$df_d = disk_free_space("D:");
+
+
+?>
+
+
 </body>
 </html>
+
+
+
