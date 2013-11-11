@@ -44,48 +44,43 @@
     <!--Start progress bar to show remaining HDD space-->
 
 
-<p>HDD space total in Bytes</p>
 
+<!--This calculates the amount of space in Bytes on:
+    The disk
+    Free
+    percent used
+    percent free
+    -->
 <?php
-// $ds contains the total number of bytes available on "/"
 $ds = disk_total_space("/");
-
-echo $ds;
-?>
-
-<br />
-<br />
-<p>HDD space available in Bytes</p>
-<?php
 $df = disk_free_space("/");
-
-echo $df;
-?>
-<br />
-<br />
-<p>% HDD available</p>
-<?php
-
 $per =  ($df / $ds) * 100;
-echo $per;
 $perrem = 100 - $per;
+
+$dsGig = ($ds/1073741824);
+$dfGig = ($df/1073741824);
+
+
+$dsGigSimp = (float)number_format($dsGig, 2, '.', '');
+$dfGigSimp = (float)number_format($dfGig, 2, '.', '');
 ?>
 
 
 
     <div class="row">
-      <div class="col-md-6 col-md-offset-3"><h4>Space remaining:</h4></div>
+      <div class="col-md-6 col-md-offset-3"><h4>Space remaining: <?php
+      echo $dfGigSimp . ' Gb' ?> of <?php echo $dsGigSimp . ' Gb' ?></h4></div>
       </div>
       <div class="row">
 
       <div class="col-md-6 col-md-offset-3" style="">
         <div class="progress progress-striped">
           <div class="progress-bar progress-bar-success tip"
-        data-toggle="tooltip" data-placement="bottom" title="Synoptics
-        - <?php echo $perrem ?>" role="progressbar"
+        data-toggle="tooltip" data-placement="bottom" title="Used
+        - <?php echo intval($perrem) ?>%" role="progressbar"
         aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"
         style="width: <?php echo $perrem ?>%">
-            <span class="sr-only"><?php echo $perrem ?> Complete (success)</span>
+            <span class="sr-only">Complete (success)</span>
           </div>
         </div>
     </div>
