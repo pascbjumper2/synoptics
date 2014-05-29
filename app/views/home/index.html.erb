@@ -1,0 +1,163 @@
+<%= javascript_include_tag "prototype" %><!--Do I still need this?-->
+
+    <div class="container containerSynoptics">
+
+		<div class="row">
+
+		<!---------------------Begin Features List------------------->
+			<div id="sidebar" class="col-sm-3">	
+				<div class="span3 panel panel-success">
+					  <!-- Default panel contents -->
+					  <div class="panel-heading">Features</div>				
+					  <!-- List group -->				  
+
+					  <ul id="columns" class="list-group fixedList">
+	
+
+	
+							  
+							  <li id="feature_1" onclick="selected_feature_id = 1; select(this);" draggable="true" class="list-group-item activated column">Chart of Accounts
+								<div class="listIcons pull-right">
+									<span class="glyphicon glyphicon-pencil listGlyph"></span>								
+									<span class="glyphicon glyphicon-remove listGlyph"></span>							
+									
+								</div>
+							  </li>
+							  
+							  <li id="feature_2" onclick="selected_feature_id = 2; select(this);" draggable="true" class="list-group-item column">Balance Sheet
+								<div class="listIcons pull-right">
+									<span class="glyphicon glyphicon-pencil listGlyph"></span>								
+									<span class="glyphicon glyphicon-remove listGlyph"></span>
+								</div>
+							  </li>	
+							  
+							  <li id="feature_3" onclick="selected_feature_id = 3; select(this);" draggable="true" class="list-group-item column">Invoices
+								<div class="listIcons pull-right">
+									<span class="glyphicon glyphicon-pencil listGlyph"></span>								
+									<span class="glyphicon glyphicon-remove listGlyph"></span>							
+								</div>
+							  </li>	
+							  
+							  <li id="feature_4" onclick="selected_feature_id = 4; select(this);" draggable="true" class="list-group-item column">Cash Flow
+								<div class="listIcons pull-right">
+									<span class="glyphicon glyphicon-pencil listGlyph"></span>								
+									<span class="glyphicon glyphicon-remove listGlyph"></span>								
+								</div>
+							  </li>	
+							  						  			
+							  <li id="feature_5" onclick="selected_feature_id = 5; select(this);" draggable="true" class="list-group-item column">Expenses
+								<div class="listIcons pull-right">
+									<span class="glyphicon glyphicon-pencil listGlyph"></span>								
+									<span class="glyphicon glyphicon-remove listGlyph"></span>							
+								</div>
+							  </li>							  			
+
+							  <li id="feature_6" onclick="selected_feature_id = 6; select(this);" draggable="true" class="list-group-item column">Invoices
+								<div class="listIcons pull-right">
+									<span class="glyphicon glyphicon-pencil listGlyph"></span>								
+									<span class="glyphicon glyphicon-remove listGlyph"></span>							
+								</div>
+							  </li>	
+
+							  <li id="feature_5" onclick="selected_feature_id = 5; select(this);" draggable="true" class="list-group-item column">History
+								<div class="listIcons pull-right">
+									<span class="glyphicon glyphicon-pencil listGlyph"></span>								
+									<span class="glyphicon glyphicon-remove listGlyph"></span>							
+								</div>
+							  </li>	
+
+							  <li id="feature_5" onclick="selected_feature_id = 5; select(this);" draggable="true" class="list-group-item column">Dashboard
+								<div class="listIcons pull-right">
+									<span class="glyphicon glyphicon-pencil listGlyph"></span>								
+									<span class="glyphicon glyphicon-remove listGlyph"></span>							
+								</div>
+							  </li>	
+					
+							  <li id="feature_5" onclick="selected_feature_id = 5; select(this);" draggable="true" class="list-group-item column">Schedule Payments
+								<div class="listIcons pull-right">
+									<span class="glyphicon glyphicon-pencil listGlyph"></span>								
+									<span class="glyphicon glyphicon-remove listGlyph"></span>							
+								</div>
+							  </li>						
+					
+							  <li id="feature_5" onclick="selected_feature_id = 5; select(this);" draggable="true" class="list-group-item column">Inventory
+								<div class="listIcons pull-right">
+									<span class="glyphicon glyphicon-pencil listGlyph"></span>								
+									<span class="glyphicon glyphicon-remove listGlyph"></span>							
+								</div>
+							  </li>						
+
+							  <li id="feature_5" onclick="selected_feature_id = 5; select(this);" draggable="true" class="list-group-item column">Time Cards
+								<div class="listIcons pull-right">
+									<span class="glyphicon glyphicon-pencil listGlyph"></span>								
+									<span class="glyphicon glyphicon-remove listGlyph"></span>							
+								</div>
+							  </li>	
+
+							  <li id="feature_5" onclick="selected_feature_id = 5; select(this);" draggable="true" class="list-group-item column">Partners
+								<div class="listIcons pull-right">
+									<span class="glyphicon glyphicon-pencil listGlyph"></span>								
+									<span class="glyphicon glyphicon-remove listGlyph"></span>							
+								</div>
+							  </li>	
+							  			
+							  <br />		  
+					  </ul>		
+					<div class="panel-footer coloredFooter">
+						<button type="button" class="btn btn-danger btn-sm pull-right">Remove</button>						
+						<button type="button" class="btn btn-default btn-sm">More</button>
+						<button type="button" class="btn btn-default btn-sm pull-right pullRightSpacing" onclick="showhide('sidebar');">Hide</button>
+					</div><!--End Features Panel Footer-->								  	  
+				</div>				
+			</div>
+	<!---------------------End Features List------------------->
+
+	<!---------------------Begin Loaded Feature Area-----AKA:Box-2-------------->
+			<div id="loadedFeatureArea" class="col-sm-9 pull-right">	
+				<div class="span9 panel panel-success">
+					  <!-- Default panel contents -->
+					  <div id="panel2header" class="panel-heading">Dashboard</div>				
+						  <div id="panelContent" class="panelAreaBigSynoptics">	    
+							  <div class="panel2Content">
+
+						  
+						  
+								  <h3>Content Will be Going here!</h3>
+								  <p>Try the 'Toggle' button, it's functional!</p>
+								  <button type="button" class="btn btn-default btn-sm toggleSidebar">Toggle</button>
+								  <br /><br />
+
+
+								  <button type="button" class="btn btn-default btn-sm" onclick="loadCOA()">View Charts</button>
+								  
+								 
+
+								  
+
+
+
+
+							</div><!--End div panel2Content, this really just adds the right padding and stuff without interfering with level 2 banners-->
+					  </div><!--End Div panelContent-->
+					  
+					<div class="panel-footer coloredFooter">		
+						<button type="button" class="btn btn-default btn-sm" onclick="loadCOA()">View Dashboard</button><!--View the Dash, it's dashing!-->
+						<button type="button" class="btn btn-default btn-sm toggleSidebar">Toggle</button>
+
+					</div><!--End Features Panel Footer-->								  	  
+				</div>				
+			</div>
+	<!---------------------End Loaded Feature Area------------------->
+		
+		
+		
+		</div><!--End div w/ class row--><!--This holds the two big panels-->
+
+
+    </div><!-- /.container -->
+
+
+
+
+
+

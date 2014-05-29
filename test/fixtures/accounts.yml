@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  number: 
+  name: MyString
+  description: MyString
+  acc_type: MyString
+  acc_class: MyString
+  balance: 
+
+two:
+  number: 
+  name: MyString
+  description: MyString
+  acc_type: MyString
+  acc_class: MyString
+  balance: 

@@ -1,0 +1,271 @@
+<head>
+	<script src="../assets/tableSort.js"></script>  
+
+	<script type="text/javascript">
+		  $('.selectpicker').selectpicker({
+		    size: 4
+		  });
+	</script>
+
+
+
+
+    <title>Synoptics - Chart of Accounts</title>
+
+</head>
+<body>
+						  
+	<div class="panel2-header">
+		<button type="button" class="btn btn-default btn-sm" data-toggle="modal" href="#newacc">Add Account</button>									
+		<button type="button" class="btn btn-default btn-sm" data-toggle="modal" href="#newacc">Make Adjustment</button>
+		<div class="btn-group">
+			<button type="button" class="btn btn-default btn-sm dropdown-toggle" data-toggle="dropdown">Download 
+				<span class="caret"></span>
+			</button>
+			<ul class="dropdown-menu" role="menu">
+				<li><a href="#">Download PDF</a></li>
+				<li><a href="#">Download Excel</a></li>
+				<li><a href="#">Download CSV</a></li>
+				<li class="divider"></li>
+				<li><a href="#">Information</a></li>
+			</ul>
+		</div>					  			  
+	</div>
+		
+						  
+
+<div class="panel2Content">
+            <form style="width:250px; float:right;" class="pull-right;" action="#" method="get">
+                <div class="input-group">
+                    <!-- USE TWITTER TYPEAHEAD JSON WITH API TO SEARCH -->
+                    <input class="form-control" id="system-search" name="q" placeholder="Search" required>
+                    <span class="input-group-btn">
+                        <button type="submit" class="btn btn-default"><i class="glyphicon glyphicon-search"></i></button>
+                    </span>
+                </div>
+            </form>
+
+	<!--<p>Filter: </p>-->
+	<style>
+		.selected {
+			border:0px;
+			border-style: none;
+			border-shadow:0px;
+		}
+	</style>
+    <select id="id_select" class="selectpicker">
+        <option>All</option>
+        <option data-subtext="1000-1999">Assets</option>
+        <option data-subtext="2000-2999">Liabilities</option>
+        <option data-subtext="3000-3999">Stock Holder Equity</option>
+    </select>  
+
+	<span style="margin-bottom:5px; background-color:white;" class="glyphicon glyphicon-arrow-right"></span>							
+
+
+    <select id="id_select" class="selectpicker">
+        <option>All</option>
+        <option>Cash</option>
+        <option>Stock</option>
+        <option>Short term Investments</option>
+    </select>
+
+
+
+
+
+
+                    <br />
+
+    	 <table class="table table-list-search">
+                    <thead>
+                    	<tr><h3 style="text-align:center;">Assets</h3></tr>
+                    	<tr>
+                            <th>Account #</th>
+                            <th>Name</th>
+                            <th>Type</th>
+                            <th>Balance</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1000</td>
+                            <td>Cash</td>
+                            <td>Current Asset</td>
+                            <td>$1,000</td>
+                        </tr>
+                        <tr>
+                            <td>1010</td>
+                            <td>Petty Cash</td>
+                            <td>Current Asset</td>
+                            <td>$100</td>
+                        </tr>
+                        <tr>
+                            <td>1030</td>
+                            <td>Short-term Investments</td>
+                            <td>Current Asset</td>
+                            <td>$10,500</td>
+                        </tr>
+                    </tbody>
+                </table>   
+
+
+			
+    	 <table class="table table-list-search">
+                    <thead>
+                    	<tr><h3 style="text-align:center;">Liabilities</h3></tr>
+                        <tr>
+                            <th>Account #</th>
+                            <th>Name</th>
+                            <th>Type</th>
+                            <th>Balance</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>2000</td>
+                            <td>Notes Payable</td>
+                            <td>Long Term Liability</td>
+                            <td>$1,000</td>
+                        </tr>
+                        <tr>
+                            <td>2010</td>
+                            <td>Bank Loans Payable</td>
+                            <td>Current Asset</td>
+                            <td>$12,000</td>
+                        </tr>
+                        <tr>
+                            <td>2090</td>
+                            <td>Accrued Expenses</td>
+                            <td>Current Liability</td>
+                            <td>$1,500</td>
+                        </tr>
+                    </tbody>
+                </table> 
+
+
+			
+    	 <table class="table table-list-search">
+                    <thead>
+                    	<tr><h3 style="text-align:center;">Stock Holder Equity</h3></tr>
+                        <tr>
+                            <th>Account #</th>
+                            <th>Name</th>
+                            <th>Type</th>
+                            <th>Balance</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>3000</td>
+                            <td>Stated Capital</td>
+                            <td>Equity</td>
+                            <td>$1000</td>
+                        </tr>
+                        <tr>
+                            <td>3010</td>
+                            <td>Capital Surplus</td>
+                            <td>Equity</td>
+                            <td>$100</td>
+                        </tr>
+                        <tr>
+                            <td>3030</td>
+                            <td>Retained Earnings</td>
+                            <td>Equity</td>
+                            <td>$0</td>
+                        </tr>
+                    </tbody>
+                </table>          
+
+</div>
+
+
+
+
+
+
+
+
+<!-----------Modals------------->
+
+<div class="modal fade" id="newacc">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<%= form_for @account do |f| %>
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+				<h4 class="modal-title">New Account</h4>
+			</div>
+			<div class="modal-body">
+		
+				<p><b>Account Name</b></p>
+				<%= f.text_field :name, :class => 'form-control', :placeholder => "Ex: Petty Cash" %>
+				<br />
+				<p><b>Account number</b></p>
+				<%= f.text_field :number, :class => 'form-control', :placeholder => "Ex: 1010" %>
+				<br />
+				<p><b>Account type</b></p>
+				<div class="btn-group btn-group-justified" data-toggle="buttons">
+				    <label class="btn btn-primary active">
+				        <%= f.radio_button :acc_type, "Asset", :checked => true %> Asset
+				    </label>
+				    <label class="btn btn-primary">
+				        <%= f.radio_button :acc_type, "Liability" %> Liability
+				    </label>
+				    <label class="btn btn-primary">
+				        <%= f.radio_button :acc_type, "Stockholder Equity" %> Stockholder Equity
+				    </label>
+				</div>
+				<br />		
+				<p><b>Account Class</b></p>
+				<%= f.text_field :acc_class, :class => 'form-control', :placeholder => "Ex: Current Assets" %>
+				<br />
+				<p><b>Account Description</b></p>
+				<%= f.text_area :description, :class => 'form-control', :placeholder => "Ex: The money outside of our safe for small purchases" %>
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+				<%= f.submit 'Create Account', :class => 'btn btn-primary' %>
+			</div>
+			<% end %>
+		</div>
+	</div>
+</div>
+
+
+
+<% @accounts.each do |account| %>
+	<p>
+		<%= account.number %><br />
+		<%= account.name %><br />
+		<%= account.description %><br />
+		<%= account.acc_type %><br />
+		<%= account.acc_class %><br />
+		<%= account.balance %><br />
+		
+		<%= link_to 'Edit', edit_account_path(account) %><br />
+		<%#= link_to 'Delete', '/accounts/:account', method: :delete %>
+		<%#= link_to 'Delete Account', account, method: :destroy %>
+		<%=link_to 'Delete Account', account_path(account), method: :delete%>
+
+
+	</p>
+<% end %>
+
+
+
+</head>
+<body>
+
+
+
+
+
+
+
+
+
+
+
+
+

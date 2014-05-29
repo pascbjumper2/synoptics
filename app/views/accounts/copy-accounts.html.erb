@@ -1,0 +1,191 @@
+<head>
+	<script src="../assets/tableSort.js"></script>  
+
+	<script type="text/javascript">
+		  $('.selectpicker').selectpicker({
+		    size: 4
+		  });
+	</script>
+
+
+<% #render :layout => false %>
+
+
+    <title>Synoptics - Chart of Accounts</title>
+
+</head>
+<body>
+						  
+	<div class="panel2-header">
+		<button type="button" class="btn btn-default btn-sm">Add Account</button>									
+	
+		<div class="btn-group">
+			<button type="button" class="btn btn-default btn-sm dropdown-toggle" data-toggle="dropdown">Download 
+				<span class="caret"></span>
+			</button>
+			<ul class="dropdown-menu" role="menu">
+				<li><a href="#">Download PDF</a></li>
+				<li><a href="#">Download Excel</a></li>
+				<li><a href="#">Download CSV</a></li>
+				<li class="divider"></li>
+				<li><a href="#">Information</a></li>
+			</ul>
+		</div>					  			  
+	</div>
+		
+						  
+
+<div class="panel2Content">
+            <form style="width:250px; float:right;" class="pull-right;" action="#" method="get">
+                <div class="input-group">
+                    <!-- USE TWITTER TYPEAHEAD JSON WITH API TO SEARCH -->
+                    <input class="form-control" id="system-search" name="q" placeholder="Search" required>
+                    <span class="input-group-btn">
+                        <button type="submit" class="btn btn-default"><i class="glyphicon glyphicon-search"></i></button>
+                    </span>
+                </div>
+            </form>
+
+	<!--<p>Filter: </p>-->
+
+    <select id="id_select" class="selectpicker">
+        <option>All</option>
+        <option style="border:0px;" data-subtext="1000-1999">Assets</option>
+        <option>Liabilities</option>
+        <option>Stock Holder Equity</option>
+    </select>  
+
+	<span style="margin-bottom:5px; background-color:white;" class="glyphicon glyphicon-arrow-right"></span>							
+
+
+    <select id="id_select" class="selectpicker">
+        <option>All</option>
+        <option>Cash</option>
+        <option>Stock</option>
+        <option>Short term Investments</option>
+    </select>
+
+
+
+
+
+
+                    <br />
+
+    	 <table class="table table-list-search">
+                    <thead>
+                    	<tr><h3 style="text-align:center;">Assets</h3></tr>
+                    	<tr>
+                            <th>Account #</th>
+                            <th>Name</th>
+                            <th>Type</th>
+                            <th>Balance</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1000</td>
+                            <td>Cash</td>
+                            <td>Current Asset</td>
+                            <td>$1,000</td>
+                        </tr>
+                        <tr>
+                            <td>1010</td>
+                            <td>Petty Cash</td>
+                            <td>Current Asset</td>
+                            <td>$100</td>
+                        </tr>
+                        <tr>
+                            <td>1030</td>
+                            <td>Short-term Investments</td>
+                            <td>Current Asset</td>
+                            <td>$10,500</td>
+                        </tr>
+                    </tbody>
+                </table>   
+
+
+			
+    	 <table class="table table-list-search">
+                    <thead>
+                    	<tr><h3 style="text-align:center;">Liabilities</h3></tr>
+                        <tr>
+                            <th>Account #</th>
+                            <th>Name</th>
+                            <th>Type</th>
+                            <th>Balance</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>2000</td>
+                            <td>Notes Payable</td>
+                            <td>Long Term Liability</td>
+                            <td>$1,000</td>
+                        </tr>
+                        <tr>
+                            <td>2010</td>
+                            <td>Bank Loans Payable</td>
+                            <td>Current Asset</td>
+                            <td>$12,000</td>
+                        </tr>
+                        <tr>
+                            <td>2090</td>
+                            <td>Accrued Expenses</td>
+                            <td>Current Liability</td>
+                            <td>$1,500</td>
+                        </tr>
+                    </tbody>
+                </table> 
+
+
+			
+    	 <table class="table table-list-search">
+                    <thead>
+                    	<tr><h3 style="text-align:center;">Stock Holder Equity</h3></tr>
+                        <tr>
+                            <th>Account #</th>
+                            <th>Name</th>
+                            <th>Type</th>
+                            <th>Balance</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>3000</td>
+                            <td>Stated Capital</td>
+                            <td>Equity</td>
+                            <td>$0</td>
+                        </tr>
+                        <tr>
+                            <td>3010</td>
+                            <td>Capital Surplus</td>
+                            <td>Equity</td>
+                            <td>$100</td>
+                        </tr>
+                        <tr>
+                            <td>3030</td>
+                            <td>Retained Earnings</td>
+                            <td>Equity</td>
+                            <td>$0</td>
+                        </tr>
+                    </tbody>
+                </table>          
+
+</div>
+
+</head>
+<body>
+
+
+
+
+
+
+
+
+
+
+
+
+

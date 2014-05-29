@@ -1,0 +1,82 @@
+body {
+	min-width:750px;	
+}
+
+
+.navText {
+	color:white;
+}
+
+.containerSynoptics {
+	margin-top:80px; 
+	padding:10px 30px;
+}
+
+.coloredFooter {
+	background-color:#1d7074;
+}
+
+.fixedList, .panelAreaBigSynoptics {
+	height:65vh; 
+	overflow:auto; 
+	overflow-x: hidden;	
+}
+
+#sidebar {
+	min-width:230px;
+}
+
+.list-group-item:hover {
+	background-color: #34C6CD;
+	border-color: #34C6CD;
+}
+
+.column.over {
+	background-color: #34C6CD;
+	border-color: #34C6CD;
+}
+
+.list-group-item .listIcons {
+	margin-top:3px; 
+	float:right;
+}
+
+.list-group-item .listIcons:hover {
+}
+
+.listGlyph {	
+	color:white;
+}
+
+.listGlyph:hover {	
+	color:#006064;
+}
+
+.activated {
+	background-color: #079c9a;
+	border-color: #079c9a;
+}
+
+
+.panel2Content {
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+.panel2-header {
+	padding:10px;
+	border-bottom: 1px solid #eeeeee;
+	margin-bottom: 10px;
+}
+
+.absolute {
+	position: absolute;
+}
+
+.notAbsolute {
+	position: inherit;
+}
+.pullRightSpacing {
+	margin-right:10px;
+}
+

@@ -1,0 +1,17 @@
+<h2>Index</h2>
+
+<%= link_to 'Create new account', new_account_path  %>
+
+<% @accounts.each do |account| %>
+	<p>
+		<%= account.number %><br />
+		<%= link_to account.name, account_path(account) %><br />
+		<%= account.description %><br />
+		<%= account.acc_type %><br />
+		<%= account.acc_class %><br />
+		<%= account.balance %><br />
+		
+		<%= link_to 'Edit', edit_account_path(account) %><br />
+		<%= link_to 'Delete', account, method: :delete %>
+	</p>
+<% end %>
