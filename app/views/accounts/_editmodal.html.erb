@@ -7,7 +7,7 @@
       </div>
       <div class="modal-body">
 
-		<%= form_for @account do |g| %>
+		<%= form_for account do |g| %>
 		
 				<p><b>Account Name</b></p>
 				<%= g.text_field :name, :class => 'form-control', :placeholder => "Ex: Petty Cash", :value => account.name %>

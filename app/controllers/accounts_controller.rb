@@ -17,7 +17,7 @@ class AccountsController < ApplicationController
 		
 		if @account.save
 			flash[:notice] = "Account created!"
-			redirect_to ''
+			redirect_to root_path
 		else
 			render 'new'
 		end
@@ -34,7 +34,7 @@ class AccountsController < ApplicationController
 	def update
 		@account = Account.find(params[:id])
 		if @account.update_attributes(allowed_params)
-			redirect_to accounts_path
+			redirect_to root_path
 		else
 			render 'new'
 		end
