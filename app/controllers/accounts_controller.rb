@@ -16,13 +16,18 @@ class AccountsController < ApplicationController
 		@account = Account.new(allowed_params)
 		
 		if @account.save
-			redirect_to accounts_path
+			flash[:notice] = "Account created!"
+			redirect_to ''
 		else
 			render 'new'
 		end
 	end
 
 	def edit
+		@account = Account.find(params[:id])
+	end
+
+	def editmodal
 		@account = Account.find(params[:id])
 	end
 
@@ -38,7 +43,8 @@ class AccountsController < ApplicationController
 	def destroy
 		@account = Account.find(params[:id])
 		@account.destroy
-		redirect_to accounts_path
+		flash[:notice] = "Account removed!"
+		redirect_to ''
 	end
 
 	def accounts #Yes, magic has been done here!

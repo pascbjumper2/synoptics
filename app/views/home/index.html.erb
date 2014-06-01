@@ -112,6 +112,7 @@
 			</div>
 	<!---------------------End Features List------------------->
 
+
 	<!---------------------Begin Loaded Feature Area-----AKA:Box-2-------------->
 			<div id="loadedFeatureArea" class="col-sm-9 pull-right">	
 				<div class="span9 panel panel-success">
@@ -121,6 +122,14 @@
 							  <div class="panel2Content">
 
 						  
+								  	<!------Begin Flash Zone--------->
+									<% if flash[:notice] %>
+									<div style="margin-top:15px;" class="alert alert-success">
+										<button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+										<span><strong>Notice: </strong><%= flash[:notice] %></span>
+									</div>
+									<% end %>						  
+								  	<!------End Flash Zone--------->						  
 						  
 								  <h3>Content Will be Going here!</h3>
 								  <p>Try the 'Toggle' button, it's functional!</p>

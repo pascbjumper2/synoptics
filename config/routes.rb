@@ -2,6 +2,7 @@ Rails.application.routes.draw do
 
 	root 'home#index'
 	
+	get "index" => "home#index"
 	get "accounts/accounts" => "accounts#accounts"
 	
 	resources :accounts

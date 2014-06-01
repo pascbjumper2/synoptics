@@ -1,0 +1,45 @@
+<div class="modal fade" id="editmodal<%=account.id%>" tabindex="-1" role="dialog" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h4 class="modal-title">Edit <%=account.name%></h4>
+      </div>
+      <div class="modal-body">
+
+		<%= form_for @account do |g| %>
+		
+				<p><b>Account Name</b></p>
+				<%= g.text_field :name, :class => 'form-control', :placeholder => "Ex: Petty Cash", :value => account.name %>
+				<br />
+				<p><b>Account number</b></p>
+				<%= g.text_field :number, :class => 'form-control', :placeholder => "Ex: 1010", :value => account.number %>
+				<br />
+				<p><b>Account type</b></p>
+				<div class="btn-group btn-group-justified" data-toggle="buttons">
+				    <label class="btn btn-primary active">
+				        <%= g.radio_button :acc_type, "Asset", :checked => true %> Asset
+				    </label>
+				    <label class="btn btn-primary">
+				        <%= g.radio_button :acc_type, "Liability" %> Liability
+				    </label>
+				    <label class="btn btn-primary">
+				        <%= g.radio_button :acc_type, "SHE" %> Stockholder Equity
+				    </label>
+				</div>
+				<br />		
+				<p><b>Account Class</b></p>
+				<%= g.text_field :acc_class, :class => 'form-control', :placeholder => "Ex: Current Assets", :value => account.acc_class %>
+				<br />
+				<p><b>Account Description</b></p>
+				<%= g.text_area :description, :class => 'form-control', :placeholder => "Ex: The money outside of our safe for small purchases", :value => account.description %>
+				<%=link_to 'Update Account', account_path(account), method: :update %>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+		<%= g.submit 'Edit Account', method: :put, :class => 'btn btn-primary' %>
+      </div>
+      <% end %>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->

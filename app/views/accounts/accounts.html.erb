@@ -1,10 +1,20 @@
+<%@accounts.each do |account|%>
+	<%=render 'editmodal', account: account%>
+<%end%>
+
 <head>
-	<script src="../assets/tableSort.js"></script>  
+	<%= csrf_meta_tag %>
+	<script src="../assets/tableSort.js"></script>
 
 	<script type="text/javascript">
 		  $('.selectpicker').selectpicker({
 		    size: 4
 		  });
+		  
+		  //The below is temp, delete it whenever. It helps to hide the fluff/charts
+		$( "#hidestuff" ).click(function() {
+			$( ".tempMark" ).toggle();
+		});
 	</script>
 
 
@@ -29,7 +39,8 @@
 				<li class="divider"></li>
 				<li><a href="#">Information</a></li>
 			</ul>
-		</div>					  			  
+		</div>	
+		<button id="hidestuff" type="button" class="btn btn-default btn-sm">Hide extra</button>				  			  
 	</div>
 		
 						  
@@ -69,125 +80,83 @@
         <option>Stock</option>
         <option>Short term Investments</option>
     </select>
+	<br />
+	
+	<!--This chart is generated-->
+	<% @accounts.each do |account| %>
+		<script>
+			$( "#<%= account.acc_type %>" ).append('<tr value="<%= account.number %>" data-toggle="modal" href="#editmodal<%=account.id%>"><td><%= account.number %></td><td><%= account.name %></td><td><%= account.acc_class %></td><td>$</td></tr>');
+		</script>
+	<% end %>
+	
+	
+	<!--Assets table-->
+	<table class="table table-list-search">
+		<thead>
+			<tr><h3 style="text-align:center;">Assets</h3></tr>
+			<tr>
+				<th>Account #</th>
+				<th>Name</th>
+				<th>Type</th>
+				<th>Balance</th>
+			</tr>
+		</thead>
+		<tbody id="Asset">
+			<!--This content will be generated-->
+		</tbody>
+	</table>
+	
+	
+	<!--Liabilities table-->
+	<table class="table table-list-search">
+		<thead>
+			<tr><h3 style="text-align:center;">Liabilities</h3></tr>
+			<tr>
+				<th>Account #</th>
+				<th>Name</th>
+				<th>Type</th>
+				<th>Balance</th>
+			</tr>
+		</thead>
+		<tbody id="Liability">
+			<!--This content will be generated-->
+		</tbody>
+	</table>
+	
+	
+	<!--SHE table-->
+	<table class="table table-list-search">
+		<thead>
+			<tr><h3 style="text-align:center;">Stockholders' Equity</h3></tr>
+			<tr>
+				<th>Account #</th>
+				<th>Name</th>
+				<th>Type</th>
+				<th>Balance</th>
+			</tr>
+		</thead>
+		<tbody id="SHE">
+			<!--This content will be generated-->
+		</tbody>
+	</table>	
+	<!--End of generated chart-->
+
+</div><!--End panel2 content-->
 
 
 
-
-
-
-                    <br />
-
-    	 <table class="table table-list-search">
-                    <thead>
-                    	<tr><h3 style="text-align:center;">Assets</h3></tr>
-                    	<tr>
-                            <th>Account #</th>
-                            <th>Name</th>
-                            <th>Type</th>
-                            <th>Balance</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>1000</td>
-                            <td>Cash</td>
-                            <td>Current Asset</td>
-                            <td>$1,000</td>
-                        </tr>
-                        <tr>
-                            <td>1010</td>
-                            <td>Petty Cash</td>
-                            <td>Current Asset</td>
-                            <td>$100</td>
-                        </tr>
-                        <tr>
-                            <td>1030</td>
-                            <td>Short-term Investments</td>
-                            <td>Current Asset</td>
-                            <td>$10,500</td>
-                        </tr>
-                    </tbody>
-                </table>   
-
-
-			
-    	 <table class="table table-list-search">
-                    <thead>
-                    	<tr><h3 style="text-align:center;">Liabilities</h3></tr>
-                        <tr>
-                            <th>Account #</th>
-                            <th>Name</th>
-                            <th>Type</th>
-                            <th>Balance</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>2000</td>
-                            <td>Notes Payable</td>
-                            <td>Long Term Liability</td>
-                            <td>$1,000</td>
-                        </tr>
-                        <tr>
-                            <td>2010</td>
-                            <td>Bank Loans Payable</td>
-                            <td>Current Asset</td>
-                            <td>$12,000</td>
-                        </tr>
-                        <tr>
-                            <td>2090</td>
-                            <td>Accrued Expenses</td>
-                            <td>Current Liability</td>
-                            <td>$1,500</td>
-                        </tr>
-                    </tbody>
-                </table> 
-
-
-			
-    	 <table class="table table-list-search">
-                    <thead>
-                    	<tr><h3 style="text-align:center;">Stock Holder Equity</h3></tr>
-                        <tr>
-                            <th>Account #</th>
-                            <th>Name</th>
-                            <th>Type</th>
-                            <th>Balance</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>3000</td>
-                            <td>Stated Capital</td>
-                            <td>Equity</td>
-                            <td>$1000</td>
-                        </tr>
-                        <tr>
-                            <td>3010</td>
-                            <td>Capital Surplus</td>
-                            <td>Equity</td>
-                            <td>$100</td>
-                        </tr>
-                        <tr>
-                            <td>3030</td>
-                            <td>Retained Earnings</td>
-                            <td>Equity</td>
-                            <td>$0</td>
-                        </tr>
-                    </tbody>
-                </table>          
-
-</div>
-
-
-
-
+<style>
+	tr:hover{
+		background-color: #34c6cd;
+	}
+</style>
 
 
 
 
 <!-----------Modals------------->
-
+<!--Edit Account modal is linked as a partial (see top of screen)-->
+<!--The below should also be loaded as a partial-->
 <div class="modal fade" id="newacc">
 	<div class="modal-dialog">
 		<div class="modal-content">
@@ -213,7 +182,7 @@
 				        <%= f.radio_button :acc_type, "Liability" %> Liability
 				    </label>
 				    <label class="btn btn-primary">
-				        <%= f.radio_button :acc_type, "Stockholder Equity" %> Stockholder Equity
+				        <%= f.radio_button :acc_type, "SHE" %> Stockholder Equity
 				    </label>
 				</div>
 				<br />		
@@ -232,8 +201,19 @@
 	</div>
 </div>
 
+<% if flash[:notice] %>
+    <div class="notice"><%= flash[:notice] %></div>
+<% end %>
 
 
+
+
+
+
+
+
+<div style="display: none;"><!--I'm leaving this in here for later reference-->
+<br /><br /><br />
 <% @accounts.each do |account| %>
 	<p>
 		<%= account.number %><br />
@@ -246,11 +226,11 @@
 		<%= link_to 'Edit', edit_account_path(account) %><br />
 		<%#= link_to 'Delete', '/accounts/:account', method: :delete %>
 		<%#= link_to 'Delete Account', account, method: :destroy %>
-		<%=link_to 'Delete Account', account_path(account), method: :delete%>
-
+		<%=link_to 'Delete Account', account_path(account), method: :delete %>
 
 	</p>
 <% end %>
+</div>
 
 
 
