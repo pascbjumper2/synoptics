@@ -51860,3 +51860,732 @@ Completed 200 OK in 1162ms (Views: 1159.9ms | ActiveRecord: 0.5ms)
 
 
 Started GET "/assets/tableSort.js?_=1401650808019" for 127.0.0.1 at 2014-06-01 21:26:50 +0200
+
+
+Started GET "/" for 127.0.0.1 at 2014-06-01 21:37:06 +0200
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (10.0ms)
+Completed 200 OK in 506ms (Views: 493.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/javascripts/prototype.js" for 127.0.0.1 at 2014-06-01 21:37:07 +0200
+
+ActionController::RoutingError (No route matches [GET] "/javascripts/prototype.js"):
+  actionpack (4.1.0) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.0) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.0) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.0) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.0) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.0) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.0) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.0) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.0) lib/rails/engine.rb:514:in `call'
+  railties (4.1.0) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/joshua/.rbenv/versions/2.2.0-dev/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/joshua/.rbenv/versions/2.2.0-dev/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/joshua/.rbenv/versions/2.2.0-dev/lib/ruby/2.2.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/joshua/.rbenv/versions/2.2.0-dev/lib/ruby/gems/2.2.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.1ms)
+  Rendered /Users/joshua/.rbenv/versions/2.2.0-dev/lib/ruby/gems/2.2.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.4ms)
+  Rendered /Users/joshua/.rbenv/versions/2.2.0-dev/lib/ruby/gems/2.2.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/routes/_table.html.erb (9.0ms)
+  Rendered /Users/joshua/.rbenv/versions/2.2.0-dev/lib/ruby/gems/2.2.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (422.4ms)
+
+
+Started GET "/accounts/accounts" for 127.0.0.1 at 2014-06-01 21:37:09 +0200
+Processing by AccountsController#accounts as HTML
+  [1m[35mAccount Load (0.2ms)[0m  SELECT "accounts".* FROM "accounts"
+  Rendered accounts/_editmodal.html.erb (14.4ms)
+  Rendered accounts/_editmodal.html.erb (1.2ms)
+  Rendered accounts/_editmodal.html.erb (1.3ms)
+  Rendered accounts/_editmodal.html.erb (1.2ms)
+  Rendered accounts/_editmodal.html.erb (1.5ms)
+  Rendered accounts/_editmodal.html.erb (1.2ms)
+  Rendered accounts/_editmodal.html.erb (1.2ms)
+  Rendered accounts/_editmodal.html.erb (1.2ms)
+  Rendered accounts/_editmodal.html.erb (1.2ms)
+  Rendered accounts/_editmodal.html.erb (1.2ms)
+  Rendered accounts/_editmodal.html.erb (1.2ms)
+  Rendered accounts/_editmodal.html.erb (1.2ms)
+  Rendered accounts/_editmodal.html.erb (4.2ms)
+  Rendered accounts/_editmodal.html.erb (1.2ms)
+  Rendered accounts/_editmodal.html.erb (1.3ms)
+  Rendered accounts/_editmodal.html.erb (1.2ms)
+  Rendered accounts/accounts.html.erb (1296.6ms)
+Completed 200 OK in 1380ms (Views: 1376.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/tableSort.js?_=1401651427633" for 127.0.0.1 at 2014-06-01 21:37:11 +0200
+
+
+Started GET "/" for 127.0.0.1 at 2014-06-01 21:37:19 +0200
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (23.5ms)
+Completed 200 OK in 90ms (Views: 88.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/javascripts/prototype.js" for 127.0.0.1 at 2014-06-01 21:37:20 +0200
+
+ActionController::RoutingError (No route matches [GET] "/javascripts/prototype.js"):
+  actionpack (4.1.0) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.0) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.0) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.0) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.0) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.0) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.0) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.0) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.0) lib/rails/engine.rb:514:in `call'
+  railties (4.1.0) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/joshua/.rbenv/versions/2.2.0-dev/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/joshua/.rbenv/versions/2.2.0-dev/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/joshua/.rbenv/versions/2.2.0-dev/lib/ruby/2.2.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/joshua/.rbenv/versions/2.2.0-dev/lib/ruby/gems/2.2.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.3ms)
+  Rendered /Users/joshua/.rbenv/versions/2.2.0-dev/lib/ruby/gems/2.2.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.4ms)
+  Rendered /Users/joshua/.rbenv/versions/2.2.0-dev/lib/ruby/gems/2.2.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.3ms)
+  Rendered /Users/joshua/.rbenv/versions/2.2.0-dev/lib/ruby/gems/2.2.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (567.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-06-01 22:31:57 +0200
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (9.2ms)
+Completed 200 OK in 753ms (Views: 737.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/javascripts/prototype.js" for 127.0.0.1 at 2014-06-01 22:31:58 +0200
+
+ActionController::RoutingError (No route matches [GET] "/javascripts/prototype.js"):
+  actionpack (4.1.0) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.0) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.0) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.0) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.0) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.0) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.0) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.0) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.0) lib/rails/engine.rb:514:in `call'
+  railties (4.1.0) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/joshua/.rbenv/versions/2.2.0-dev/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/joshua/.rbenv/versions/2.2.0-dev/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/joshua/.rbenv/versions/2.2.0-dev/lib/ruby/2.2.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/joshua/.rbenv/versions/2.2.0-dev/lib/ruby/gems/2.2.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (0.9ms)
+  Rendered /Users/joshua/.rbenv/versions/2.2.0-dev/lib/ruby/gems/2.2.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.7ms)
+  Rendered /Users/joshua/.rbenv/versions/2.2.0-dev/lib/ruby/gems/2.2.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/routes/_table.html.erb (19.0ms)
+  Rendered /Users/joshua/.rbenv/versions/2.2.0-dev/lib/ruby/gems/2.2.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (411.8ms)
+
+
+Started GET "/accounts/accounts" for 127.0.0.1 at 2014-06-01 22:32:00 +0200
+Processing by AccountsController#accounts as HTML
+  [1m[35mAccount Load (0.2ms)[0m  SELECT "accounts".* FROM "accounts"
+  Rendered accounts/_editmodal.html.erb (24.5ms)
+  Rendered accounts/_editmodal.html.erb (1.1ms)
+  Rendered accounts/_editmodal.html.erb (1.3ms)
+  Rendered accounts/_editmodal.html.erb (1.1ms)
+  Rendered accounts/_editmodal.html.erb (1.2ms)
+  Rendered accounts/_editmodal.html.erb (1.3ms)
+  Rendered accounts/_editmodal.html.erb (1.2ms)
+  Rendered accounts/_editmodal.html.erb (1.1ms)
+  Rendered accounts/_editmodal.html.erb (1.1ms)
+  Rendered accounts/_editmodal.html.erb (1.1ms)
+  Rendered accounts/_editmodal.html.erb (1.1ms)
+  Rendered accounts/_editmodal.html.erb (1.2ms)
+  Rendered accounts/_editmodal.html.erb (1.1ms)
+  Rendered accounts/_editmodal.html.erb (1.4ms)
+  Rendered accounts/_editmodal.html.erb (1.1ms)
+  Rendered accounts/_editmodal.html.erb (1.1ms)
+  Rendered accounts/accounts.html.erb (1151.9ms)
+Completed 200 OK in 1238ms (Views: 1234.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/tableSort.js?_=1401654718819" for 127.0.0.1 at 2014-06-01 22:32:01 +0200
+
+
+Started GET "/" for 127.0.0.1 at 2014-06-01 22:34:48 +0200
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (6.8ms)
+Completed 200 OK in 34ms (Views: 33.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/javascripts/prototype.js" for 127.0.0.1 at 2014-06-01 22:34:48 +0200
+
+ActionController::RoutingError (No route matches [GET] "/javascripts/prototype.js"):
+  actionpack (4.1.0) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.0) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.0) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.0) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.0) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.0) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.0) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.0) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.0) lib/rails/engine.rb:514:in `call'
+  railties (4.1.0) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/joshua/.rbenv/versions/2.2.0-dev/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/joshua/.rbenv/versions/2.2.0-dev/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/joshua/.rbenv/versions/2.2.0-dev/lib/ruby/2.2.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/joshua/.rbenv/versions/2.2.0-dev/lib/ruby/gems/2.2.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (0.9ms)
+  Rendered /Users/joshua/.rbenv/versions/2.2.0-dev/lib/ruby/gems/2.2.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.1ms)
+  Rendered /Users/joshua/.rbenv/versions/2.2.0-dev/lib/ruby/gems/2.2.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/routes/_table.html.erb (0.9ms)
+  Rendered /Users/joshua/.rbenv/versions/2.2.0-dev/lib/ruby/gems/2.2.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (354.5ms)
+
+
+Started GET "/accounts/accounts" for 127.0.0.1 at 2014-06-01 22:34:49 +0200
+Processing by AccountsController#accounts as HTML
+  [1m[36mAccount Load (0.2ms)[0m  [1mSELECT "accounts".* FROM "accounts"[0m
+  Rendered accounts/_editmodal.html.erb (1.3ms)
+  Rendered accounts/_editmodal.html.erb (1.1ms)
+  Rendered accounts/_editmodal.html.erb (1.2ms)
+  Rendered accounts/_editmodal.html.erb (1.1ms)
+  Rendered accounts/_editmodal.html.erb (1.0ms)
+  Rendered accounts/_editmodal.html.erb (1.1ms)
+  Rendered accounts/_editmodal.html.erb (1.2ms)
+  Rendered accounts/_editmodal.html.erb (1.8ms)
+  Rendered accounts/_editmodal.html.erb (1.1ms)
+  Rendered accounts/_editmodal.html.erb (1.0ms)
+  Rendered accounts/_editmodal.html.erb (1.3ms)
+  Rendered accounts/_editmodal.html.erb (1.1ms)
+  Rendered accounts/_editmodal.html.erb (1.2ms)
+  Rendered accounts/_editmodal.html.erb (1.1ms)
+  Rendered accounts/_editmodal.html.erb (1.1ms)
+  Rendered accounts/_editmodal.html.erb (1.2ms)
+  Rendered accounts/accounts.html.erb (1078.0ms)
+Completed 200 OK in 1143ms (Views: 1142.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/tableSort.js?_=1401654888485" for 127.0.0.1 at 2014-06-01 22:34:50 +0200
+
+
+Started GET "/" for 127.0.0.1 at 2014-06-01 22:37:11 +0200
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (6.2ms)
+Completed 200 OK in 33ms (Views: 31.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/javascripts/prototype.js" for 127.0.0.1 at 2014-06-01 22:37:11 +0200
+
+ActionController::RoutingError (No route matches [GET] "/javascripts/prototype.js"):
+  actionpack (4.1.0) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.0) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.0) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.0) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.0) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.0) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.0) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.0) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.0) lib/rails/engine.rb:514:in `call'
+  railties (4.1.0) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/joshua/.rbenv/versions/2.2.0-dev/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/joshua/.rbenv/versions/2.2.0-dev/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/joshua/.rbenv/versions/2.2.0-dev/lib/ruby/2.2.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/joshua/.rbenv/versions/2.2.0-dev/lib/ruby/gems/2.2.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (0.8ms)
+  Rendered /Users/joshua/.rbenv/versions/2.2.0-dev/lib/ruby/gems/2.2.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.1ms)
+  Rendered /Users/joshua/.rbenv/versions/2.2.0-dev/lib/ruby/gems/2.2.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.0ms)
+  Rendered /Users/joshua/.rbenv/versions/2.2.0-dev/lib/ruby/gems/2.2.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (349.3ms)
+
+
+Started GET "/accounts/accounts" for 127.0.0.1 at 2014-06-01 22:37:12 +0200
+Processing by AccountsController#accounts as HTML
+  [1m[35mAccount Load (0.2ms)[0m  SELECT "accounts".* FROM "accounts"
+  Rendered accounts/_editmodal.html.erb (1.3ms)
+  Rendered accounts/_editmodal.html.erb (21.7ms)
+  Rendered accounts/_editmodal.html.erb (1.2ms)
+  Rendered accounts/_editmodal.html.erb (2.0ms)
+  Rendered accounts/_editmodal.html.erb (1.2ms)
+  Rendered accounts/_editmodal.html.erb (1.3ms)
+  Rendered accounts/_editmodal.html.erb (1.4ms)
+  Rendered accounts/_editmodal.html.erb (1.3ms)
+  Rendered accounts/_editmodal.html.erb (1.5ms)
+  Rendered accounts/_editmodal.html.erb (1.3ms)
+  Rendered accounts/_editmodal.html.erb (1.2ms)
+  Rendered accounts/_editmodal.html.erb (1.1ms)
+  Rendered accounts/_editmodal.html.erb (2.0ms)
+  Rendered accounts/_editmodal.html.erb (1.1ms)
+  Rendered accounts/_editmodal.html.erb (1.1ms)
+  Rendered accounts/_editmodal.html.erb (1.2ms)
+  Rendered accounts/accounts.html.erb (1096.8ms)
+Completed 200 OK in 1166ms (Views: 1165.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/tableSort.js?_=1401655031180" for 127.0.0.1 at 2014-06-01 22:37:13 +0200
+
+
+Started GET "/" for 127.0.0.1 at 2014-06-01 22:38:54 +0200
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (12.5ms)
+Completed 200 OK in 39ms (Views: 38.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/javascripts/prototype.js" for 127.0.0.1 at 2014-06-01 22:38:54 +0200
+
+ActionController::RoutingError (No route matches [GET] "/javascripts/prototype.js"):
+  actionpack (4.1.0) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.0) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.0) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.0) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.0) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.0) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.0) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.0) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.0) lib/rails/engine.rb:514:in `call'
+  railties (4.1.0) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/joshua/.rbenv/versions/2.2.0-dev/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/joshua/.rbenv/versions/2.2.0-dev/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/joshua/.rbenv/versions/2.2.0-dev/lib/ruby/2.2.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/joshua/.rbenv/versions/2.2.0-dev/lib/ruby/gems/2.2.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendered /Users/joshua/.rbenv/versions/2.2.0-dev/lib/ruby/gems/2.2.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.1ms)
+  Rendered /Users/joshua/.rbenv/versions/2.2.0-dev/lib/ruby/gems/2.2.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/routes/_table.html.erb (0.9ms)
+  Rendered /Users/joshua/.rbenv/versions/2.2.0-dev/lib/ruby/gems/2.2.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (354.8ms)
+
+
+Started GET "/accounts/accounts" for 127.0.0.1 at 2014-06-01 22:38:55 +0200
+Processing by AccountsController#accounts as HTML
+  [1m[36mAccount Load (0.2ms)[0m  [1mSELECT "accounts".* FROM "accounts"[0m
+  Rendered accounts/_editmodal.html.erb (2.6ms)
+  Rendered accounts/_editmodal.html.erb (2.1ms)
+  Rendered accounts/_editmodal.html.erb (1.4ms)
+  Rendered accounts/_editmodal.html.erb (1.3ms)
+  Rendered accounts/_editmodal.html.erb (1.3ms)
+  Rendered accounts/_editmodal.html.erb (1.3ms)
+  Rendered accounts/_editmodal.html.erb (1.2ms)
+  Rendered accounts/_editmodal.html.erb (1.3ms)
+  Rendered accounts/_editmodal.html.erb (1.5ms)
+  Rendered accounts/_editmodal.html.erb (1.3ms)
+  Rendered accounts/_editmodal.html.erb (1.2ms)
+  Rendered accounts/_editmodal.html.erb (1.2ms)
+  Rendered accounts/_editmodal.html.erb (1.3ms)
+  Rendered accounts/_editmodal.html.erb (1.1ms)
+  Rendered accounts/_editmodal.html.erb (1.2ms)
+  Rendered accounts/_editmodal.html.erb (1.2ms)
+  Rendered accounts/accounts.html.erb (1108.2ms)
+Completed 200 OK in 1180ms (Views: 1178.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/tableSort.js?_=1401655134108" for 127.0.0.1 at 2014-06-01 22:38:56 +0200
+
+
+Started POST "/accounts" for 127.0.0.1 at 2014-06-01 22:39:04 +0200
+Processing by AccountsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"5MkBCAzy8PCQ7pas8c52dlceq4yFtvtu9F39aV6K9mo=", "account"=>{"name"=>"h", "number"=>"h", "acc_type"=>"Asset", "acc_class"=>"hh", "description"=>"h"}, "commit"=>"Create Account"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "accounts" ("acc_class", "acc_type", "created_at", "description", "name", "number", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["acc_class", "hh"], ["acc_type", "Asset"], ["created_at", "2014-06-01 20:39:04.368237"], ["description", "h"], ["name", "h"], ["number", 0], ["updated_at", "2014-06-01 20:39:04.368237"]]
+  [1m[35m (2.3ms)[0m  commit transaction
+Redirected to http://localhost:3000
+Completed 302 Found in 19ms (ActiveRecord: 2.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-06-01 22:39:04 +0200
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (8.5ms)
+Completed 200 OK in 31ms (Views: 30.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/javascripts/prototype.js" for 127.0.0.1 at 2014-06-01 22:39:04 +0200
+
+ActionController::RoutingError (No route matches [GET] "/javascripts/prototype.js"):
+  actionpack (4.1.0) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.0) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.0) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.0) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.0) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.0) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.0) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.0) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.0) lib/rails/engine.rb:514:in `call'
+  railties (4.1.0) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/joshua/.rbenv/versions/2.2.0-dev/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/joshua/.rbenv/versions/2.2.0-dev/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/joshua/.rbenv/versions/2.2.0-dev/lib/ruby/2.2.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/joshua/.rbenv/versions/2.2.0-dev/lib/ruby/gems/2.2.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.1ms)
+  Rendered /Users/joshua/.rbenv/versions/2.2.0-dev/lib/ruby/gems/2.2.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.1ms)
+  Rendered /Users/joshua/.rbenv/versions/2.2.0-dev/lib/ruby/gems/2.2.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.0ms)
+  Rendered /Users/joshua/.rbenv/versions/2.2.0-dev/lib/ruby/gems/2.2.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (349.9ms)
+
+
+Started GET "/accounts/accounts" for 127.0.0.1 at 2014-06-01 22:39:06 +0200
+Processing by AccountsController#accounts as HTML
+  [1m[36mAccount Load (0.2ms)[0m  [1mSELECT "accounts".* FROM "accounts"[0m
+  Rendered accounts/_editmodal.html.erb (1.4ms)
+  Rendered accounts/_editmodal.html.erb (1.4ms)
+  Rendered accounts/_editmodal.html.erb (1.1ms)
+  Rendered accounts/_editmodal.html.erb (1.2ms)
+  Rendered accounts/_editmodal.html.erb (1.1ms)
+  Rendered accounts/_editmodal.html.erb (1.2ms)
+  Rendered accounts/_editmodal.html.erb (1.2ms)
+  Rendered accounts/_editmodal.html.erb (1.2ms)
+  Rendered accounts/_editmodal.html.erb (1.2ms)
+  Rendered accounts/_editmodal.html.erb (1.2ms)
+  Rendered accounts/_editmodal.html.erb (1.2ms)
+  Rendered accounts/_editmodal.html.erb (1.2ms)
+  Rendered accounts/_editmodal.html.erb (1.2ms)
+  Rendered accounts/_editmodal.html.erb (1.1ms)
+  Rendered accounts/_editmodal.html.erb (1.1ms)
+  Rendered accounts/_editmodal.html.erb (1.0ms)
+  Rendered accounts/_editmodal.html.erb (1.3ms)
+  Rendered accounts/accounts.html.erb (1146.4ms)
+Completed 200 OK in 1211ms (Views: 1210.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/tableSort.js?_=1401655144440" for 127.0.0.1 at 2014-06-01 22:39:07 +0200
+
+
+Started GET "/" for 127.0.0.1 at 2014-06-01 22:39:53 +0200
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (8.4ms)
+Completed 200 OK in 35ms (Views: 34.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/javascripts/prototype.js" for 127.0.0.1 at 2014-06-01 22:39:53 +0200
+
+ActionController::RoutingError (No route matches [GET] "/javascripts/prototype.js"):
+  actionpack (4.1.0) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.0) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.0) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.0) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.0) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.0) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.0) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.0) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.0) lib/rails/engine.rb:514:in `call'
+  railties (4.1.0) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/joshua/.rbenv/versions/2.2.0-dev/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/joshua/.rbenv/versions/2.2.0-dev/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/joshua/.rbenv/versions/2.2.0-dev/lib/ruby/2.2.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/joshua/.rbenv/versions/2.2.0-dev/lib/ruby/gems/2.2.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.6ms)
+  Rendered /Users/joshua/.rbenv/versions/2.2.0-dev/lib/ruby/gems/2.2.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.6ms)
+  Rendered /Users/joshua/.rbenv/versions/2.2.0-dev/lib/ruby/gems/2.2.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.4ms)
+  Rendered /Users/joshua/.rbenv/versions/2.2.0-dev/lib/ruby/gems/2.2.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (365.5ms)
+
+
+Started GET "/accounts/accounts" for 127.0.0.1 at 2014-06-01 22:39:54 +0200
+Processing by AccountsController#accounts as HTML
+  [1m[35mAccount Load (0.2ms)[0m  SELECT "accounts".* FROM "accounts"
+  Rendered accounts/_editmodal.html.erb (1.5ms)
+  Rendered accounts/_editmodal.html.erb (1.1ms)
+  Rendered accounts/_editmodal.html.erb (1.4ms)
+  Rendered accounts/_editmodal.html.erb (1.2ms)
+  Rendered accounts/_editmodal.html.erb (1.2ms)
+  Rendered accounts/_editmodal.html.erb (1.1ms)
+  Rendered accounts/_editmodal.html.erb (1.1ms)
+  Rendered accounts/_editmodal.html.erb (5.4ms)
+  Rendered accounts/_editmodal.html.erb (1.5ms)
+  Rendered accounts/_editmodal.html.erb (1.3ms)
+  Rendered accounts/_editmodal.html.erb (1.4ms)
+  Rendered accounts/_editmodal.html.erb (1.3ms)
+  Rendered accounts/_editmodal.html.erb (1.2ms)
+  Rendered accounts/_editmodal.html.erb (1.2ms)
+  Rendered accounts/_editmodal.html.erb (1.3ms)
+  Rendered accounts/_editmodal.html.erb (1.2ms)
+  Rendered accounts/_editmodal.html.erb (1.1ms)
+  Rendered accounts/accounts.html.erb (1123.2ms)
+Completed 200 OK in 1186ms (Views: 1185.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/tableSort.js?_=1401655193595" for 127.0.0.1 at 2014-06-01 22:39:55 +0200
+
+
+Started GET "/" for 127.0.0.1 at 2014-06-01 22:40:46 +0200
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (7.8ms)
+Completed 200 OK in 30ms (Views: 29.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/javascripts/prototype.js" for 127.0.0.1 at 2014-06-01 22:40:46 +0200
+
+ActionController::RoutingError (No route matches [GET] "/javascripts/prototype.js"):
+  actionpack (4.1.0) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.0) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.0) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.0) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.0) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.0) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.0) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.0) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.0) lib/rails/engine.rb:514:in `call'
+  railties (4.1.0) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/joshua/.rbenv/versions/2.2.0-dev/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/joshua/.rbenv/versions/2.2.0-dev/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/joshua/.rbenv/versions/2.2.0-dev/lib/ruby/2.2.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/joshua/.rbenv/versions/2.2.0-dev/lib/ruby/gems/2.2.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (0.9ms)
+  Rendered /Users/joshua/.rbenv/versions/2.2.0-dev/lib/ruby/gems/2.2.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.2ms)
+  Rendered /Users/joshua/.rbenv/versions/2.2.0-dev/lib/ruby/gems/2.2.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/routes/_table.html.erb (0.9ms)
+  Rendered /Users/joshua/.rbenv/versions/2.2.0-dev/lib/ruby/gems/2.2.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (337.8ms)
+
+
+Started GET "/accounts/accounts" for 127.0.0.1 at 2014-06-01 22:40:47 +0200
+Processing by AccountsController#accounts as HTML
+  [1m[36mAccount Load (0.2ms)[0m  [1mSELECT "accounts".* FROM "accounts"[0m
+  Rendered accounts/_editmodal.html.erb (1.4ms)
+  Rendered accounts/_editmodal.html.erb (1.2ms)
+  Rendered accounts/_editmodal.html.erb (1.3ms)
+  Rendered accounts/_editmodal.html.erb (1.2ms)
+  Rendered accounts/_editmodal.html.erb (1.2ms)
+  Rendered accounts/_editmodal.html.erb (1.6ms)
+  Rendered accounts/_editmodal.html.erb (1.5ms)
+  Rendered accounts/_editmodal.html.erb (1.5ms)
+  Rendered accounts/_editmodal.html.erb (1.3ms)
+  Rendered accounts/_editmodal.html.erb (1.5ms)
+  Rendered accounts/_editmodal.html.erb (1.3ms)
+  Rendered accounts/_editmodal.html.erb (1.4ms)
+  Rendered accounts/_editmodal.html.erb (1.4ms)
+  Rendered accounts/_editmodal.html.erb (1.2ms)
+  Rendered accounts/_editmodal.html.erb (1.4ms)
+  Rendered accounts/_editmodal.html.erb (1.2ms)
+  Rendered accounts/_editmodal.html.erb (1.8ms)
+  Rendered accounts/accounts.html.erb (1160.5ms)
+Completed 200 OK in 1237ms (Views: 1236.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/tableSort.js?_=1401655246884" for 127.0.0.1 at 2014-06-01 22:40:49 +0200
+
+
+Started GET "/" for 127.0.0.1 at 2014-06-02 00:30:26 +0200
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (9.3ms)
+Completed 200 OK in 765ms (Views: 750.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/javascripts/prototype.js" for 127.0.0.1 at 2014-06-02 00:30:27 +0200
+
+ActionController::RoutingError (No route matches [GET] "/javascripts/prototype.js"):
+  actionpack (4.1.0) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.0) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.0) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.0) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.0) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.0) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.0) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.0) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.0) lib/rails/engine.rb:514:in `call'
+  railties (4.1.0) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/joshua/.rbenv/versions/2.2.0-dev/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/joshua/.rbenv/versions/2.2.0-dev/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/joshua/.rbenv/versions/2.2.0-dev/lib/ruby/2.2.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/joshua/.rbenv/versions/2.2.0-dev/lib/ruby/gems/2.2.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.1ms)
+  Rendered /Users/joshua/.rbenv/versions/2.2.0-dev/lib/ruby/gems/2.2.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.8ms)
+  Rendered /Users/joshua/.rbenv/versions/2.2.0-dev/lib/ruby/gems/2.2.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/routes/_table.html.erb (18.1ms)
+  Rendered /Users/joshua/.rbenv/versions/2.2.0-dev/lib/ruby/gems/2.2.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (401.7ms)
+
+
+Started GET "/accounts/accounts" for 127.0.0.1 at 2014-06-02 00:30:29 +0200
+Processing by AccountsController#accounts as HTML
+  [1m[35mAccount Load (0.2ms)[0m  SELECT "accounts".* FROM "accounts"
+  Rendered accounts/_editmodal.html.erb (22.0ms)
+  Rendered accounts/_editmodal.html.erb (1.2ms)
+  Rendered accounts/_editmodal.html.erb (1.1ms)
+  Rendered accounts/_editmodal.html.erb (1.1ms)
+  Rendered accounts/_editmodal.html.erb (1.1ms)
+  Rendered accounts/_editmodal.html.erb (1.1ms)
+  Rendered accounts/_editmodal.html.erb (1.1ms)
+  Rendered accounts/_editmodal.html.erb (1.0ms)
+  Rendered accounts/_editmodal.html.erb (1.0ms)
+  Rendered accounts/_editmodal.html.erb (1.1ms)
+  Rendered accounts/_editmodal.html.erb (1.0ms)
+  Rendered accounts/_editmodal.html.erb (1.0ms)
+  Rendered accounts/_editmodal.html.erb (1.3ms)
+  Rendered accounts/_editmodal.html.erb (1.1ms)
+  Rendered accounts/_editmodal.html.erb (1.1ms)
+  Rendered accounts/_editmodal.html.erb (1.0ms)
+  Rendered accounts/_editmodal.html.erb (1.0ms)
+  Rendered accounts/accounts.html.erb (1131.4ms)
+Completed 200 OK in 1207ms (Views: 1203.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/tableSort.js?_=1401661827733" for 127.0.0.1 at 2014-06-02 00:30:30 +0200
+
+
+Started POST "/accounts" for 127.0.0.1 at 2014-06-02 00:30:48 +0200
+Processing by AccountsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"5MkBCAzy8PCQ7pas8c52dlceq4yFtvtu9F39aV6K9mo=", "account"=>{"name"=>"Stated Capital", "number"=>"4021", "acc_type"=>"SHE", "acc_class"=>"Capital", "description"=>""}, "commit"=>"Edit Account"}
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "accounts" ("acc_class", "acc_type", "created_at", "description", "name", "number", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["acc_class", "Capital"], ["acc_type", "SHE"], ["created_at", "2014-06-01 22:30:48.161301"], ["description", ""], ["name", "Stated Capital"], ["number", 4021], ["updated_at", "2014-06-01 22:30:48.161301"]]
+  [1m[36m (1.8ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000
+Completed 302 Found in 19ms (ActiveRecord: 2.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-06-02 00:30:48 +0200
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (6.3ms)
+Completed 200 OK in 31ms (Views: 29.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/javascripts/prototype.js" for 127.0.0.1 at 2014-06-02 00:30:48 +0200
+
+ActionController::RoutingError (No route matches [GET] "/javascripts/prototype.js"):
+  actionpack (4.1.0) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.0) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.0) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.0) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.0) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.0) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.0) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.0) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.0) lib/rails/engine.rb:514:in `call'
+  railties (4.1.0) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/joshua/.rbenv/versions/2.2.0-dev/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/joshua/.rbenv/versions/2.2.0-dev/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/joshua/.rbenv/versions/2.2.0-dev/lib/ruby/2.2.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/joshua/.rbenv/versions/2.2.0-dev/lib/ruby/gems/2.2.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendered /Users/joshua/.rbenv/versions/2.2.0-dev/lib/ruby/gems/2.2.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.2ms)
+  Rendered /Users/joshua/.rbenv/versions/2.2.0-dev/lib/ruby/gems/2.2.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.2ms)
+  Rendered /Users/joshua/.rbenv/versions/2.2.0-dev/lib/ruby/gems/2.2.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (353.2ms)
+
+
+Started GET "/accounts/accounts" for 127.0.0.1 at 2014-06-02 00:30:50 +0200
+Processing by AccountsController#accounts as HTML
+  [1m[35mAccount Load (0.2ms)[0m  SELECT "accounts".* FROM "accounts"
+  Rendered accounts/_editmodal.html.erb (1.3ms)
+  Rendered accounts/_editmodal.html.erb (1.1ms)
+  Rendered accounts/_editmodal.html.erb (1.2ms)
+  Rendered accounts/_editmodal.html.erb (1.3ms)
+  Rendered accounts/_editmodal.html.erb (1.3ms)
+  Rendered accounts/_editmodal.html.erb (1.1ms)
+  Rendered accounts/_editmodal.html.erb (1.8ms)
+  Rendered accounts/_editmodal.html.erb (1.0ms)
+  Rendered accounts/_editmodal.html.erb (1.0ms)
+  Rendered accounts/_editmodal.html.erb (1.0ms)
+  Rendered accounts/_editmodal.html.erb (1.0ms)
+  Rendered accounts/_editmodal.html.erb (0.9ms)
+  Rendered accounts/_editmodal.html.erb (1.0ms)
+  Rendered accounts/_editmodal.html.erb (1.1ms)
+  Rendered accounts/_editmodal.html.erb (1.1ms)
+  Rendered accounts/_editmodal.html.erb (1.0ms)
+  Rendered accounts/_editmodal.html.erb (1.1ms)
+  Rendered accounts/_editmodal.html.erb (1.1ms)
+  Rendered accounts/accounts.html.erb (1167.2ms)
+Completed 200 OK in 1232ms (Views: 1231.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/tableSort.js?_=1401661848246" for 127.0.0.1 at 2014-06-02 00:30:51 +0200
