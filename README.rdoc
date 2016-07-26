@@ -1,28 +1,5 @@
-== README
+== Synoptics
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This is an old Rails app I built (2 years ago) to connect several other Rails apps together with a nice interface.
 
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-
-
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+If you're here to gauge code quality, you've come to the wrong place.
